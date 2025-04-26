@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mingalar Pay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="wallet-container">
+    <h1 class="title">Mingalar Pay</h1>
+
+    <div id="connect-section">
+      <button id="connectButton" class="glow-button">Connect Wallet</button>
+    </div>
+
+    <div id="wallet-section" class="hidden">
+      <div class="card">
+        <p class="label">Address:</p>
+        <p id="address" class="address"></p>
+
+        <p class="label">Balance:</p>
+        <h2 id="balance" class="balance"></h2>
+        <h3 id="usdBalance" class="usd-balance"></h3>
+
+        <div class="send-section">
+          <h2>Send ETH</h2>
+          <input id="toAddress" type="text" placeholder="Recipient Address">
+          <input id="amount" type="number" placeholder="Amount (ETH)">
+          <button id="sendButton" class="send-button">Send</button>
+        </div>
+
+        <div class="receive-section">
+          <h2>Receive</h2>
+          <input id="yourAddress" type="text" readonly>
+        </div>
+
+        <div class="tx-section">
+          <a id="etherscanLink" target="_blank" class="tx-link">View Transactions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
